@@ -15,12 +15,14 @@ public class AirportTest {
     public void setUp(){
         this.airport = new Airport("Heathrow");
     }
-
+/*
     @Test
     public void canAddFlight(){
         Flight plane1 = new Flight("Canada", 456);
         airport.addFlight(plane1);
         assertThat(airport.getFlight().size()).isEqualTo(1);
     }
+
+ */
 
 }

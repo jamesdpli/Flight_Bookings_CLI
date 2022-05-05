@@ -1,7 +1,7 @@
 package airport;
 
 import airport.Flight;
-import airport.Passenger;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -17,7 +17,7 @@ public class FlightTest {
         this.passenger = new Passenger("Bob Marley", "07703645411", 123);
         this.flight = new Flight("Turkey", 321);
     }
-
+/*
     @Test
     public void canAddPassenger() {
         //flight.addPassenger ("Bob Marley", "07703645411", 123);
@@ -25,5 +25,6 @@ public class FlightTest {
         flight.addPassenger(mike);
         assertThat(flight.getPassengers().size()).isEqualTo(1);
     }
+    */
 
 }

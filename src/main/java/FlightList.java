@@ -1,5 +1,7 @@
 import airport.Flight;
+import airport.Passenger;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class FlightList {
@@ -16,5 +18,17 @@ public class FlightList {
             new Flight("Iceland",200),
             new Flight("India",100)
     );
+
+    public void addFlight(Flight flight){
+        this.flights.add(flight);
+    }
+
+    public static List<Flight> getFlight(){
+        return flights;
+    }
+
+    public void cancelFlight(Flight flight){
+        this.flights.remove(flight);
+    }
 
 }

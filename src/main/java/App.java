@@ -76,7 +76,7 @@ public class App {
          if("yes".equals(userChoice2.toLowerCase())) {
 
              for (Flight flights: FlightList.flights) {
-                 System.out.println(airport.getFlight());
+                 System.out.println(FlightList.getFlight());
 
              }
 

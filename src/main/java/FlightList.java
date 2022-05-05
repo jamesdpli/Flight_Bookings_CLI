@@ -34,5 +34,4 @@ public class FlightList {
         return flights;
     }
 
-
 }

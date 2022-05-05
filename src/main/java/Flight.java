@@ -40,8 +40,8 @@ public class Flight {
     public String toString() {
         return "Flight{" +
                 "destination='" + destination + '\'' +
-                ", id=" + id +
-//               ", passengers=" + passengers +
+                ", id='" + id + '\'' +
+                ", passengerList=" + passengerList +
                 '}';
     }
 }

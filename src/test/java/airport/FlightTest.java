@@ -18,7 +18,6 @@ public class FlightTest {
         this.flight = new Flight("Turkey", 321);
     }
 
-
     @Test
     public void canAddPassenger() {
         //flight.addPassenger ("Bob Marley", "07703645411", 123);

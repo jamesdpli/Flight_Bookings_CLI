@@ -24,4 +24,9 @@ public class Airport {
         return flights;
     }
 
+    @Override
+    public String toString() {
+        return ", flights=" + flights +
+                '}';
+    }
 }

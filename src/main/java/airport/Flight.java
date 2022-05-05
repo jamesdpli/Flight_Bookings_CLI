@@ -48,4 +48,12 @@ public class Flight {
         this.passengers = passengers;
     }
 
+    @Override
+    public String toString() {
+        return "Flight{" +
+                "destination='" + destination + '\'' +
+                ", id=" + id +
+//               ", passengers=" + passengers +
+                '}';
+    }
 }

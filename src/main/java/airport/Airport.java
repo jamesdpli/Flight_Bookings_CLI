@@ -7,7 +7,7 @@ public class Airport {
 
     private String name;
     //ArrayList<Flight> flights;
-    private List<Flight> flights;
+    private ArrayList<Flight> flights;
 
 
     public Airport(String name){
@@ -16,8 +16,8 @@ public class Airport {
     }
 
 
-    public List<Flight> getFlight(){
-        return FlightList.flights;
+    public ArrayList<Flight> getFlight(){
+        return flights;
     }
 
 

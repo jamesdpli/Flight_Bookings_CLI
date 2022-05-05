@@ -57,7 +57,7 @@ public class App {
             int userFlightId = scanner.nextInt();
 
             Flight newFlight = new Flight(userFlightDestination,userFlightId);
-            airport.addFlight(newFlight);
+//          FlightList.addFlight(newFlight);
 
             System.out.println("The flight added is: " + newFlight);
 
@@ -75,9 +75,9 @@ public class App {
 
          if("yes".equals(userChoice2.toLowerCase())) {
 
-             for (Flight flights: FlightList.flights) {
+             for (Flight flights: airport.getFlight()) {
                  //System.out.println(FlightList.getFlight());
-                 System.out.println(Airport.getFlight());
+                 System.out.println(airport.getFlight());
 
              }
 

@@ -1,21 +1,23 @@
-package airport;
-
 import java.util.ArrayList;
+import java.util.List;
 
 public class Flight {
 
     private String destination;
     private int id;
-    //ArrayList<Passenger> passengers;
+    List<Passenger> passengerList;
 
     public Flight(String destination, int id){
         this. destination = destination;
         this.id = id;
-        //this.passengers = new ArrayList<>();
+        this.passengerList = new PassengerList().getPassengers();
     }
 
 //  Getters and Setters
 
+    public void addPassengerToFlight(Passenger passenger){
+        this.passengerList.add(passenger);
+    }
 
     public String getDestination() {
         return destination;

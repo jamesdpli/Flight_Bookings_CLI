@@ -1,8 +1,3 @@
-import airport.Airport;
-import airport.Flight;
-import airport.Passenger;
-
-import java.util.Locale;
 import java.util.Scanner;
 
 public class App {

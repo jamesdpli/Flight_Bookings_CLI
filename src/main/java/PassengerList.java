@@ -1,23 +1,25 @@
-import airport.Flight;
-import airport.Passenger;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class PassengerList {
 
-    public static final  List<Passenger> passengers = List.of(
-      new Passenger ("Tom", "07923657892", 001),
-      new Passenger ("Sam", "07923657456", 002),
-      new Passenger ("Pat", "07923657654", 003),
-      new Passenger ("James", "0792365773", 004),
-      new Passenger ("Naim", "07923657987", 005),
-      new Passenger ("Aisha", "07923657123", 006),
-      new Passenger ("Henry", "07923657432", 007),
-      new Passenger ("Harry", "07923657524", 020),
-      new Passenger ("John", "07923657935", 030),
-      new Passenger ("Ben", "07923657710", 010)
-    );
+    List<Passenger> passengers;
+
+
+    public PassengerList(){
+        this.passengers = new ArrayList<>();
+        passengers.add(new Passenger("Tom", "07923657892", 001));
+        passengers.add(new Passenger("Henry", "07923657654", 002));
+        passengers.add(new Passenger("James", "07923657123", 003));
+        passengers.add(new Passenger("Naim", "07923657935", 004));
+        passengers.add(new Passenger("Aisha", "07923657911", 005));
+        passengers.add(new Passenger("Edward", "07923657750", 006));
+        passengers.add(new Passenger("Harry", "07923657173", 007));
+        passengers.add(new Passenger("Sheldon", "07923657010", 010));
+        passengers.add(new Passenger("Penny", "07923657667", 020));
+        passengers.add(new Passenger("Raj", "07923657889", 030));
+    }
+
 
     public void addPassenger(Passenger passenger){
         this.passengers.add(passenger);
@@ -27,8 +29,8 @@ public class PassengerList {
         return passengers;
     }
 
-    public void removePassenger(Passenger passenger){
-        this.passengers.remove(passenger);
+    public void removePassenger(int index){
+        this.passengers.remove(index);
     }
 
 

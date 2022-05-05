@@ -1,3 +1,5 @@
+package airport;
+
 public class Passenger {
     private String name;
     private String phoneNumber;

@@ -1,3 +1,5 @@
+package airport;
+
 import java.util.ArrayList;
 
 public class Airport {

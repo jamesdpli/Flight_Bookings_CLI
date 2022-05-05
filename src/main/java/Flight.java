@@ -4,10 +4,10 @@ import java.util.List;
 public class Flight {
 
     private String destination;
-    private int id;
+    private String id;
     List<Passenger> passengerList;
 
-    public Flight(String destination, int id){
+    public Flight(String destination, String id){
         this. destination = destination;
         this.id = id;
         this.passengerList = new PassengerList().getPassengers();
@@ -27,11 +27,11 @@ public class Flight {
         this.destination = destination;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

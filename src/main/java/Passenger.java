@@ -1,9 +1,9 @@
 public class Passenger {
     private String name;
     private String phoneNumber;
-    private int id;
+    private String id;
 
-    public Passenger (String name, String phoneNumber, int id){
+    public Passenger (String name, String phoneNumber, String id){
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.id = id;
@@ -27,11 +27,11 @@ public class Passenger {
         this.phoneNumber = phoneNumber;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

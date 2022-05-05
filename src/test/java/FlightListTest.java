@@ -20,7 +20,7 @@ public class FlightListTest {
 
     @Test
     public void canAddFlight(){
-        flightList.addFlight(new Flight("London", 432));
+        flightList.addFlight(new Flight("London", "432"));
         assertThat(flightList.getFlight().size()).isEqualTo(11);
     }
 

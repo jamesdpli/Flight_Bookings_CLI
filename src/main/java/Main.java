@@ -1,14 +1,12 @@
 public class Main {
+
     public static void main(String[] args) {
 
+        CLI.printHelp();
+        CLI.start();
 
-//        App flightApp = new App();
-//        flightApp.start();
-//        flightApp.userAddFlight();
-//        flightApp.userDisplayAllFlights();
-
-        Airport heathrow = new Airport("Heathrow");
-        heathrow.getFlight();
+//        CLI cli = new CLI();
+//            cli.start();
 
 
     }

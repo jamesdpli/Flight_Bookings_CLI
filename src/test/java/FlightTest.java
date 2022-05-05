@@ -9,12 +9,12 @@ public class FlightTest {
 
     @BeforeEach
     public void setUp(){
-        this.flight = new Flight("Turkey", 986);
+        this.flight = new Flight("Turkey", "986");
     }
 
     @Test
     public void canAddPassengerToFlight(){
-        flight.addPassengerToFlight(new Passenger("John", "07943761277", 011));
+        flight.addPassengerToFlight(new Passenger("John", "07943761277", "011"));
         assertThat(flight.passengerList.size()).isEqualTo(11);
     }
 

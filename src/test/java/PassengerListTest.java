@@ -20,7 +20,7 @@ public class PassengerListTest {
 
     @Test
     public void canAddPassenger(){
-        passengerList.addPassenger(new Passenger("Ben", "07956657892", 040));
+        passengerList.addPassenger(new Passenger("Ben", "07956657892", "040"));
         assertThat(passengerList.getPassengers().size()).isEqualTo(11);
     }
 

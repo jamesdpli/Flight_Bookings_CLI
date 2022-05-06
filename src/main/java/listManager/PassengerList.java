@@ -1,10 +1,13 @@
+package listManager;
+
+import airport.Passenger;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class PassengerList {
 
     List<Passenger> passengers;
-
 
     public PassengerList(){
         this.passengers = new ArrayList<>();
@@ -19,7 +22,6 @@ public class PassengerList {
         passengers.add(new Passenger("Penny", "07923657667", "020"));
         passengers.add(new Passenger("Raj", "07923657889", "030"));
     }
-
 
     public void addPassenger(Passenger passenger){
         this.passengers.add(passenger);

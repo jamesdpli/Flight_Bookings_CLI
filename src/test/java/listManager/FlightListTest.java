@@ -1,3 +1,7 @@
+package listManager;
+
+import airport.Flight;
+import listManager.FlightList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -30,15 +34,4 @@ public class FlightListTest {
         flightList.cancelFlight(2);
         assertThat(flightList.getFlight().size()).isEqualTo(9);
     }
-
-
-
-
-
-
-
-
-
-
-
 }

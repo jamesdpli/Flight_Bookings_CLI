@@ -1,3 +1,7 @@
+package airport;
+
+import airport.Flight;
+import airport.Passenger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

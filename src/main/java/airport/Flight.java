@@ -1,4 +1,7 @@
-import java.util.ArrayList;
+package airport;
+
+import listManager.PassengerList;
+
 import java.util.List;
 
 public class Flight {
@@ -38,10 +41,10 @@ public class Flight {
 
     @Override
     public String toString() {
-        return "Flight{" +
+        return "airport.Flight{" +
                 "destination='" + destination + '\'' +
-                ", id='" + id + '\'' +
-                ", passengerList=" + passengerList +
+                ", id=" + id +
+//               ", passengers=" + passengers +
                 '}';
     }
 }

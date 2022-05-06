@@ -1,9 +1,13 @@
+package listManager;
+
+import airport.Flight;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class FlightList {
 
-    //FlightList flightList;
+    //listManager.FlightList flightList;
     List<Flight> flights;
 
     public FlightList(){
@@ -20,8 +24,6 @@ public class FlightList {
         flights.add(new Flight("India","100"));
     }
 
-
-
     public void addFlight(Flight flight){
         this.flights.add(flight);
     }
@@ -33,5 +35,6 @@ public class FlightList {
     public List<Flight> getFlight(){
         return flights;
     }
+
 
 }

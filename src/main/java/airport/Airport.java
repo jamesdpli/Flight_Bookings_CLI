@@ -1,10 +1,12 @@
+package airport;
+
 import java.util.ArrayList;
 
 public class Airport {
 
     private String name;
-    //ArrayList<Flight> flights;
-    private ArrayList<Flight> flights;
+    //ArrayList<airport.Flight> flights;
+//    private ArrayList<Flight> flights;
 
 
     public Airport(String name){
@@ -13,9 +15,9 @@ public class Airport {
     }
 
 
-    public ArrayList<Flight> getFlight(){
-        return flights;
-    }
+//    public ArrayList<Flight> getFlight(){
+//        return flights;
+//    }
 
 
 }

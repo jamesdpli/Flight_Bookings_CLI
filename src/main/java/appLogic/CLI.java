@@ -1,4 +1,11 @@
-import java.util.Arrays;
+package appLogic;
+
+import airport.Airport;
+import airport.Flight;
+import airport.Passenger;
+import listManager.FlightList;
+import listManager.PassengerList;
+
 import java.util.Scanner;
 
 public class CLI {
@@ -33,11 +40,11 @@ public class CLI {
     public void start() {
         String userInput = scanner.nextLine();
         String[] inputWords = userInput.split(" ");
-        System.out.println(Arrays.toString(inputWords));
+//      This code prints out the array inputWords
+//      System.out.println(Arrays.toString(inputWords));
         String command = inputWords[0];
 
         switch (command) {
-
             case "add-flight":
                 flightList.addFlight(new Flight(inputWords[1], inputWords[2]));
                 System.out.println("Your flight has been added!");
@@ -58,7 +65,8 @@ public class CLI {
                 break;
 
             case "cancel-flight":
-                System.out.println("Here are your flights, what one do you want to cancel? (Type 1-10)");
+                System.out.println("Here are your flights, what one do you want to cancel? (Type 1-"
+                        + flightList.getFlight().size() + ")");
                 flightList.getFlight().forEach(System.out::println);
                 int usersCanceledFLight = scanner.nextInt();
                 flightList.cancelFlight(usersCanceledFLight - 1);
@@ -70,3 +78,5 @@ public class CLI {
     }
 
 }
+
+
